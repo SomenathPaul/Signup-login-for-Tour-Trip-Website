@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+
+body {
+    background: black;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main img {
+    width: 70px;
+}
+
+.main h1 {
+    color: white;
+}
+
+.main p {
+    text-align: center;
+    color: #b1b1b1;
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+/* background video */
+video {
+    position: fixed;
+    object-fit: cover;
+    opacity: .3;
+    z-index: -1;
+    overflow: hidden;
+}
+
+
+/* form container */
+.form-container {
+    width: 350px;
+    height: 500px;
+    background: #ffffff14;
+    border-radius: 20px;
+    border: 1px solid #b1b1b1;
+    padding: 20px;
+    color: white;
+}
+
+.form-container h2 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.form-container p {
+    color: beige;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input,
+button {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+input {
+    padding-left: 15px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+button {
+    background: #2663ff;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4bbe;
+}
+
+/* or sign up with social media  */
+
+.facebook {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 5px 20px;
+    background: #2663ff;
+    color: white;
+}
+
+.facebook i {
+    margin-right: 40px;
+}
+
+.facebook a,
+.google a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+.google {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 5px 20px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+}
+
+.google img {
+    width: 15px;
+    margin-right: 48px;
+}
+
+.or-with {
+    margin-top: 20px;
+}
+
+.or-with p {
+    margin-left: 120px;
+    font-size: 14px;
+    margin-top: -11px;
+    color: black;
+    border-radius: 15px;
+    background: white;
+    width: 70px;
+}
+
+/* already have an account  */
+.have-account {
+    display: flex;
+    justify-content: center;
+}
+
+.have-account p {
+    font-size: 13px;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+.have-account a {
+    color: #2663ff;
+    text-decoration: none;
+}
+
+.have-account a:hover {
+    text-decoration: underline;
+}
+
+
+/* responsive */
+@media only screen and (max-width: 426px) {
+    .main img {
+        width: 50px;
+    }
+
+    .main h1 {
+        font-size: 20px;
+    }
+
+    .main p {
+        font-size: 10px;
+    }
+
+    /* form container */
+    .form-container {
+        width: 280px;
+        height: 450px;
+    }
+
+    .form-container h2 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    input,
+    button {
+        width: 100%;
+        height: 30px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+    /* or sign up with social media  */
+    .facebook {
+        height: 30px;
+    }
+    
+    .facebook i {
+        margin-right: 10px;
+    }
+    .google img {
+        width: 15px;
+        margin-right: 13px;
+    }
+    /* already have an account  */
+    .have-account p {
+        font-size: 13px;
+    }
+}
